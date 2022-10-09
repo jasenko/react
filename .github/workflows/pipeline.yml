@@ -23,9 +23,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.10.0'
-      - uses: actions/javascript-action@v1
-        with:
-          milliseconds: 1000
+      - run: corepack enable
+      - run: yarn
+      - run: yarn test
+      
             
   
 
