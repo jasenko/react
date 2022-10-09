@@ -17,16 +17,12 @@ on:
 jobs:
  
   simple-deployment:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '16'
-
-        
-      - name:  lint
-        run: npm run lint
+          node-version: '18.10.0'
             
   
 
