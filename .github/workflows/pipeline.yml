@@ -26,7 +26,8 @@ jobs:
       - run: corepack enable
       - run: yarn
       - run: yarn lint
-      - run: yarn test
+      - run: yarn test --prod
+      - run: yarn flow
       
             
   
