@@ -25,6 +25,7 @@ jobs:
           node-version: '18.10.0'
       - run: corepack enable
       - run: yarn
+      - run: yarn lint
       - run: yarn test
       
             
